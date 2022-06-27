@@ -1,0 +1,103 @@
+{% extends 'web/base_home.html' %}
+{% load  static %}
+{% block content %}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina inicio</title>
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  </head>
+  <body>
+
+{% include "includes/header.html" %}
+
+<br>
+
+<div class="row">
+
+  <div class="medium-7 large-6 columns">
+    <h1>Nuestra Promesa</h1>
+    <p class="subheader">Somos una empresa innovadora, especializada en el suministro de materia prima, construcción y mantenimiento de construcciones o carreteras, renta y venta de maquinaria, renta de transporte compartiendo valores de Honestidad, Servicio y Excelencia, en beneficio de nuestros clientes</p>
+  </div>
+
+  <div class="show-for-large large-3 columns">
+    <img src="{% static 'media/tres.jpg' %}" alt="picture of space">
+  </div>
+
+
+</div>
+
+<div class="row column">
+  <hr>
+</div>
+
+<div class="row column">
+  <p class="lead">Nuestros servicios</p>
+</div>
+
+<div class="row small-up-1 medium-up-2 large-up-3">
+  <div class="column">
+    <div class="callout">
+      <p>PLANTA EXTRACCION MINERA</p>
+      <p><img src="{% static 'media/dos.jpg' %}" alt="image of a planet called Pegasi B"></p>
+      <p class="lead">Mision</p>
+      <p class="subheader">Aprovechar los recursos minerales en forma responsable a través de la valoración y respeto a sus empleados, las comunidades, el medio ambiente, el entorno cultural y el marco legal del país.                                                                                              .</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="callout">
+      <p>RENTA Y VENTA DE MAQUINARIA</p>
+      <p><img src="{% static 'media/cuatro.jpg' %}" alt="image of a planet called Pegasi B"></p>
+      <p class="lead">Nuestra propuesta</p>
+      <p class="subheader">Somos una empresa altamente calificada para satisfacer las necesidades de clientes y ayudarlos en el éxito de su negocio. TRANSPORT se dedica a la venta y tenta de maquinaria pesada y liviana (para la construcción de carreteras, movimientos de tierra, desarrollos inmobiliarios, etc.)</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="callout">
+      <p>TRANS. PRODUCTOS INTERNACIONAL</p>
+      <p><img src="{% static 'media/cinco.jpg' %}" alt="image of a planet called Pegasi B"></p>
+      <p class="lead">Vision</p>
+      <p class="subheader">Una empresa con visión innovadora enfocada al desarrollo y administración de sistemas logísticos para facilitar el comercio internacional. Servicios: Despacho Aduanal, Consultoría, transporte de cualquier tipo de producto,</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="callout">
+      <p>TRANSPORTE MATERIA PRIMA</p>
+      <p><img src="{% static 'media/seis.png' %}" alt="image of a planet called Pegasi B"></p>
+      <p class="lead">Nuestro servicio</p>
+      <p class="subheader">contamos con una basta experiencia en el manejo de carga terrestre de productos, por tal razón nos hemos posicionado como una de las mejores empresas a nivel nacional. Brindándole un servicio integrado, amplio, simplificado y seguro que satisface las necesidades de nuestros clientes que operan desde cualquier parte del pais.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="callout">
+      <p>PLANTA DE PROCESO DE MATERIA PRIMA</p>
+      <p><img src="{% static 'media/siete.jpg' %}" alt="image of a planet called Pegasi B"></p>
+      <p class="lead">Objetivo</p>
+      <p class="subheader">Transport proporciona y mantiene la infraestructura necesaria para alcanzar la conformidad con los requisitos del producto. La infraestructura necesaria en la planta de producción, maquinaria adecuada, espacios de trabajo que facilitan el manejo del producto y lo preservan hasta su destino final.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="callout">
+      <p>SERVICIO DE CONSTRUCCION EN GENERAL</p>
+      <p><img src="{% static 'media/uno.jpg' %}" alt="image of a planet called Pegasi B"></p>
+      <p class="lead">Nuestra propuesta</p>
+      <p class="subheader">Contamos con equipo de mano de obra, maquinaria y supervision calificada para asegurar la calidad y el cumplimiento de estándares de construcción en su proyecto. Ofrecemos diferentes formas de ejecutar su proyecto para que usted cuente con opciones adecuadas a sus necesidades.</p>
+    </div>
+  </div>
+
+</div>
+
+{% include "includes/footer.html" %}
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
+
+{% endblock content %}
